@@ -1,0 +1,26 @@
+Crearemos una supeclase llamada Electrodomestico con las siguientes características:
+•	Sus atributos son precio base, color, consumo energético (letras entre A y F) y peso. Indica que se podrán heredar.
+•	Por defecto, el color sera blanco, el consumo energético sera F, el precioBase es de 100 € y el peso de 5 kg. Usa constantes para ello.
+•	Los colores disponibles son blanco, negro, rojo, azul y gris. No importa si el nombre esta en mayúsculas o en minúsculas.
+•	Los constructores que se implementaran serán
+o	Un constructor por defecto.
+o	Un constructor con el precio y peso. El resto por defecto.
+o	Un constructor con todos los atributos.
+•	Los métodos que implementara serán:
+o	Métodos get de todos los atributos.
+o	comprobarConsumoEnergetico(char letra): comprueba que la letra es correcta, sino es correcta usara la letra por defecto. Se invocara al crear el objeto y no sera visible.
+o	comprobarColor(String color): comprueba que el color es correcto, sino lo es usa el color por defecto. Se invocara al crear el objeto y no sera visible.
+o	precioFinal(): según el consumo energético, aumentara su precio, y según su tamaño, también. Esta es la lista de precios:
+o	Letra	Precio
+o	A	100 €
+o	B	80 €
+o	C	60 €
+o	D	50 €
+o	E	30 €
+o	F	10 €
+
+o	Tamaño	Precio
+o	Entre 0 y 19 kg	10 €
+o	Entre 20 y 49 kg	50 €
+o	Entre 50 y 79 kg	80 €
+o	Mayor que 80 	100 €
