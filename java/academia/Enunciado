@@ -1,0 +1,27 @@
+5.	Vamos a desarrollar tres clases que se asociarán para desarrollar un programa:
+Desarrollar una clase llamada Asignatura que:
+    Tenga tres atributos private:
+    El identificador de la asignatura (tipo int)
+    El nombre de la asignatura (tipo String)
+    La calificación en la asignatura (tipo double)
+    Tenga un constructor con dos parámetros: recibe un identificador y un nombre.
+    Tenga un método get para cada uno de los atributos
+    Tenga un método set para la calificación.
+Desarrollar una clase llamada Alumno que:
+    Tenga un atributo nombre.
+    Tenga un atributo que almacene las calificaciones de las asignaturas donde está matriculado (array de Asignatura)
+     Tenga un atributo índice para controlar en qué posición del array de calificaciones se puede insertar. Los objetos Asignatura se introducirán en el array calificaciones en la posición indicada por índice.
+    Tenga un constructor con dos parámetros que indiquen el nombre y el número de asignaturas donde está matriculado.
+    Tenga un método get para obtener el nombre.
+    Tenga un método insertarCalificacion para insertar una calificación. El método insertará un objeto Asignatura en el array calificaciones. (en este método se deberá comprobar que no se añadan más calificaciones que el número máximo de asignaturas en las que está matriculado el alumno).
+    Tenga un método obtenerCalificaciones para obtener las calificaciones (retorna un array de Asignatura).
+Desarrollar una clase Profesor que:
+    Un atributo nombre
+    Tenga un método ponerCalificaciones que recibe un parámetro de tipo Alumno. Pondrá una calificación aleatoria a cada una de las asignaturas del alumno.
+    Tenga un método calcularMedia que recibe parámetro de tipo Alumno y devuelve un double.
+Nota: Para calcular números aleatorios se emplea el método random de la clase Math.
+Crea una clase de prueba que:
+    Cree un Alumno matriculado en tres asignaturas.
+    Cree tres objetos de tipo Asignatura y se los añada al alumno creado.
+    Cree un Profesor que le ponga calificaciones y muestre por pantalla la media del alumno.
+Mostrar la calificación de cada una de las asignaturas (indicado el nombre y calificación de cada una) y también el nombre del alumno
